@@ -1,6 +1,0 @@
-framework module Pods_ListAuthorsProject_ListAuthorsProjectUITests {
-  umbrella header "Pods-ListAuthorsProject-ListAuthorsProjectUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

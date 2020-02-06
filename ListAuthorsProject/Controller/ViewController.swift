@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Alamofire
+import AlamofireObjectMapper
+import ObjectMapper
 
 class ViewController: UIViewController {
 
@@ -17,7 +20,5 @@ class ViewController: UIViewController {
         ModelUtilites.styleButton(button: signUPButton)
         ModelUtilites.styleButton(button: loginButton)
     }
-
-
 }
 

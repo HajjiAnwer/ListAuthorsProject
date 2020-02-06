@@ -8,23 +8,42 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
 
+class HomeViewController: UIViewController {
+    @IBOutlet weak var table: UITableView!
+    let servicealamofire = AlamofireService()
+    var authorsArray = [Author]()
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        retriveData()
     }
     
+    
+}
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension HomeViewController : UITableViewDataSource, UITableViewDelegate {
+    
+    func retriveData(){
+        servicealamofire.listOfAuthors { (authors) in
+            self.authorsArray = authors
+            print(self.authorsArray.count)
+            self.table.reloadData()
+        }
     }
-    */
-
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return authorsArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CellModel", for: indexPath)
+        let firstName = authorsArray[indexPath.row].firstName
+        let lastName = authorsArray[indexPath.row].lastName
+        let fullName = firstName + " " + lastName
+        cell.textLabel?.text = fullName
+        return cell
+    }
 }

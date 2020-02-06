@@ -24,6 +24,8 @@
 		F2403BA023E97D2D00285D76 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2403B9F23E97D2D00285D76 /* HomeViewController.swift */; };
 		F2403BE123E9A16300285D76 /* ModelUtilites.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2403BE023E9A16300285D76 /* ModelUtilites.swift */; };
 		F2403BE423E9AB1E00285D76 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F2403BE323E9AB1E00285D76 /* GoogleService-Info.plist */; };
+		F276966F23EABEFC0043B36F /* AlamofireService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F276966E23EABEFC0043B36F /* AlamofireService.swift */; };
+		F276967223EABFDF0043B36F /* Author.swift in Sources */ = {isa = PBXBuildFile; fileRef = F276967123EABFDF0043B36F /* Author.swift */; };
 		F2AD1E5F23E9C51900DB4972 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2AD1E5E23E9C51900DB4972 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +76,8 @@
 		F2403B9F23E97D2D00285D76 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F2403BE023E9A16300285D76 /* ModelUtilites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelUtilites.swift; sourceTree = "<group>"; };
 		F2403BE323E9AB1E00285D76 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F276966E23EABEFC0043B36F /* AlamofireService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireService.swift; sourceTree = "<group>"; };
+		F276967123EABFDF0043B36F /* Author.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Author.swift; sourceTree = "<group>"; };
 		F2AD1E5E23E9C51900DB4972 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +159,7 @@
 			children = (
 				F2403B6623E97C5100285D76 /* AppDelegate.swift */,
 				F2403B6823E97C5100285D76 /* SceneDelegate.swift */,
+				F276967023EABF090043B36F /* Service */,
 				F2403BE223E9A16A00285D76 /* Model */,
 				F2403B9A23E97CDA00285D76 /* View */,
 				F2403B9923E97CCC00285D76 /* Controller */,
@@ -208,9 +213,18 @@
 			isa = PBXGroup;
 			children = (
 				F2403BE023E9A16300285D76 /* ModelUtilites.swift */,
+				F276967123EABFDF0043B36F /* Author.swift */,
 				F2AD1E5E23E9C51900DB4972 /* Constants.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F276967023EABF090043B36F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F276966E23EABEFC0043B36F /* AlamofireService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -460,7 +474,9 @@
 				F2403B6723E97C5100285D76 /* AppDelegate.swift in Sources */,
 				F2403B6923E97C5100285D76 /* SceneDelegate.swift in Sources */,
 				F2403BA023E97D2D00285D76 /* HomeViewController.swift in Sources */,
+				F276967223EABFDF0043B36F /* Author.swift in Sources */,
 				F2403B9C23E97D0600285D76 /* SignUpViewController.swift in Sources */,
+				F276966F23EABEFC0043B36F /* AlamofireService.swift in Sources */,
 				F2AD1E5F23E9C51900DB4972 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

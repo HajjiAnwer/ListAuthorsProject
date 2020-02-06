@@ -28,5 +28,12 @@ class ModelUtilites {
         let passwordTest = NSPredicate(format: "SELF MATCHES %@", "^(?=.*[a-z])(?=.*[$@$#!%*?&])[A-Za-z\\d$@$#!%*?&]{8,}")
         return passwordTest.evaluate(with: password)
     }
+    static func setButton(button : UIButton){
+        button.layer.cornerRadius = 20
+        button.layer.shadowColor = UIColor.blue.cgColor
+        button.layer.shadowRadius = 3
+        button.layer.shadowOpacity = 1
+        button.layer.shadowOffset = .zero
+    }
     
 }

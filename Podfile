@@ -10,6 +10,8 @@ target 'ListAuthorsProject' do
     pod 'Firebase/Auth'
     pod 'Firebase/Core'
     pod 'Firebase/Firestore'
+    pod 'Alamofire', '4.9'
+    pod 'AlamofireObjectMapper', '5.2'
   target 'ListAuthorsProjectTests' do
     inherit! :search_paths
     # Pods for testing
